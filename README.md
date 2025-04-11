@@ -28,7 +28,6 @@
 
    ```bash
    git clone https://github.com/niksvir2/register
-   cd niksvir
    ```
 
 2. **Создайте базу данных в MySQL:**
@@ -65,14 +64,6 @@
 4. **Запустите локальный сервер:**
 
    - С помощью XAMPP / OpenServer / MAMP
-   - Или встроенного сервера PHP:
-
-     ```bash
-     php -S localhost:8000
-     ```
-
-   - Перейдите в браузере: [http://localhost:8000](http://localhost:8000)
-
 ---
 
 ## ✨ Возможности
