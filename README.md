@@ -49,7 +49,7 @@
    ```php
    <?php
    $host = 'localhost';
-   $db   = 'temperi';
+   $db   = 'niksvir';
    $user = 'root';
    $pass = ''; // или свой пароль
 
