@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Документация системы аутентификации</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .documentation {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 30px;
+            line-height: 1.8;
+        }
+        .section {
+            margin-bottom: 40px;
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        code {
+            background: #eee;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+        .github-link {
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="documentation">
+        <h1>Документация системы аутентификации</h1>
+        
+        <div class="section">
+            <h2>О проекте</h2>
+            <p>Система аутентификации с возможностью:</p>
+            <ul>
+                <li>Регистрации новых пользователей</li>
+                <li>Входа в систему</li>
+                <li>Личного кабинета</li>
+                <li>Проверки авторизации</li>
+                <li>Безопасного хранения паролей (хеширование)</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Структура проекта</h2>
+            <ul>
+                <li><code>index.html</code> - Главная страница с формами входа/регистрации</li>
+                <li><code>login.php</code> - Обработчик входа</li>
+                <li><code>register.php</code> - Обработчик регистрации</li>
+                <li><code>dashboard.php</code> - Личный кабинет</li>
+                <li><code>config.php</code> - Конфигурация и "фейковая" БД</li>
+                <li><code>check_auth.php</code> - Проверка статуса авторизации</li>
+                <li><code>logout.php</code> - Выход из системы</li>
+                <li><code>style.css</code> - Стили для всех страниц</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Особенности реализации</h2>
+            <ul>
+                <li>Использование сессий для хранения состояния авторизации</li>
+                <li>Password hashing с помощью <code>password_hash()</code></li>
+                <li>Валидация входных данных</li>
+                <li>Защита от XSS с помощью <code>htmlspecialchars()</code></li>
+                <li>AJAX проверка авторизации при загрузке</li>
+                <li>Адаптивный дизайн</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Ограничения</h2>
+            <ul>
+                <li>Используется "фейковая" БД в массиве (для реального использования требуется подключение к SQL)</li>
+                <li>Нет восстановления пароля</li>
+                <li>Нет подтверждения email</li>
+                <li>Нет защиты от CSRF-атак</li>
+            </ul>
+        </div>
+
+        <div class="github-link">
+            <h3>Исходный код на GitHub</h3>
+            <a href="https://github.com/niksvir2/register" target="_blank">
+                https://github.com/niksvir2/register
+            </a>
+        </div>
+    </div>
+</body>
+</html>
